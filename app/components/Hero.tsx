@@ -10,7 +10,7 @@ export default function Hero() {
           Cybersecurity Awareness for Everyone
         </span>
       </h1>
-      <p className="mt-6 text-lg md:text-xl max-w-2xl text-gray-600 dark:text-gray-300">
+      <p className="mt-6 text-lg md:text-xl max-w-2xl text-purple-200 dark:text-gray-300">
         Protect yourself from online threats with simple, practical tips. Learn
         how to browse safely, avoid scams, and keep your data secure.
       </p>
@@ -18,12 +18,7 @@ export default function Hero() {
         <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl shadow-lg transition">
           Get Started
         </button>
-        <a
-          href="#learn"
-          className="border border-gray-300 dark:border-gray-600 hover:border-blue-500 hover:text-blue-600 dark:hover:border-blue-400 dark:hover:text-blue-400 px-6 py-3 rounded-xl transition"
-        >
-          Learn More
-        </a>
+        
       </div>
     </section>
   );
