@@ -4,14 +4,14 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  
 
+  
   return (
-    <nav className="w-full flex items-center justify-between px-8 py-6 bg-white dark:bg-gray-900 shadow-md fixed top-0 z-50">
-      <div className="flex items-center gap-2 text-blue-700 dark:text-blue-400 font-bold text-2xl">
-        🔐 CyberAware
-      </div>
+<nav className="w-full flex items- justify-start  px-8 py-6 bg-white dark:bg-gray-900 shadow-md fixed top-0 z-50">
+      
 
-      <div className="hidden md:flex space-x-6 font-medium text-gray-600 dark:text-gray-300">
+<div className="hidden md:flex justify-start space-x-6 font-medium text-gray-600 dark:text-gray-300">
         <a
           href="#home"
           className="hover:text-blue-600 dark:hover:text-blue-400"
@@ -38,15 +38,17 @@ export default function Navbar() {
         </a>
       </div>
 
+      
+
       <button
-        className="md:hidden text-2xl text-gray-700 dark:text-gray-200"
+        className="md:hidden flex  justify-start text-2xl text-gray-700 dark:text-gray-200"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         ☰
       </button>
 
       {menuOpen && (
-        <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-start px-8 py-4 space-y-4 md:hidden">
+        <div className="justify-start absolute top-16 left space-x-3 -0 w-full bg-white dark:bg-gray-900 shadow-md flex flex-col items-start px-8 py-4 space-y-4 md:hidden">
           <a href="#home" onClick={() => setMenuOpen(false)}>
             Home
           </a>
@@ -59,8 +61,14 @@ export default function Navbar() {
           <a href="#about" onClick={() => setMenuOpen(false)}>
             About
           </a>
+         
         </div>
+        
       )}
+      
+       <div className="flex items-center space-x-10 gap-1000 ml-auto justify-end text-blue-700 dark:text-blue-400 font-bold text-2xl">
+        🔐 CyberAware
+      </div>
     </nav>
   );
 }
