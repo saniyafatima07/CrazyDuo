@@ -4,41 +4,30 @@ import { useState } from "react";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  
 
-  
   return (
-<nav className="w-full flex items- justify-start  px-8 py-6 bg-white dark:bg-gray-900 shadow-md fixed top-0 z-50">
-      
+    <nav className="w-full flex items-center justify-between px-8 py-6 bg-white dark:bg-gray-900 shadow-md fixed top-0 z-50">
+      <div className="flex items-center gap-2 text-blue-700 dark:text-blue-400 font-bold text-2xl">
+        🔐 CyberAware
+      </div>
 
-<div className="hidden md:flex justify-start space-x-6 font-medium text-gray-600 dark:text-gray-300">
-        <a
-          href="#home"
-          className="hover:text-blue-600 dark:hover:text-blue-400"
-        >
+      <div className="hidden md:flex space-x-6 font-medium text-gray-600 dark:text-gray-300">
+        <a href="/" className="hover:text-blue-600 dark:hover:text-blue-400">
           Home
         </a>
-        <a
-          href="#learn"
-          className="hover:text-blue-600 dark:hover:text-blue-400"
-        >
+        <a href="/" className="hover:text-blue-600 dark:hover:text-blue-400">
           Learn
         </a>
-        <a
-          href="#tips"
-          className="hover:text-blue-600 dark:hover:text-blue-400"
-        >
+        <a href="tips" className="hover:text-blue-600 dark:hover:text-blue-400">
           Tips
         </a>
         <a
-          href="#about"
+          href="/about"
           className="hover:text-blue-600 dark:hover:text-blue-400"
         >
           About
         </a>
       </div>
-
-      
 
       <button
         className="md:hidden flex  justify-start text-2xl text-gray-700 dark:text-gray-200"
@@ -61,14 +50,8 @@ export default function Navbar() {
           <a href="#about" onClick={() => setMenuOpen(false)}>
             About
           </a>
-         
         </div>
-        
       )}
-      
-       <div className="flex items-center space-x-10 gap-1000 ml-auto justify-end text-blue-700 dark:text-blue-400 font-bold text-2xl">
-        🔐 CyberAware
-      </div>
     </nav>
   );
 }
