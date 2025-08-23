@@ -1,16 +1,31 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 export default function LearnCard({
   title,
   description,
-  
   image,
   reverse,
 }: {
   title: string;
   description: string;
-  
   image: string;
   reverse?: boolean;
 }) {
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    if (title.includes("OTP")) {
+      router.push("/simulation/otp-fraud");
+    } else if (title.includes("Phishing")) {
+      router.push("/simulation/email-phishing");
+    }
+  };
+
+  // ✅ show button only for OTP & Phishing
+  const showButton = title.includes("OTP") || title.includes("Phishing");
+
   return (
     <div
       className={`w-4/5 max-w-4xl mx-auto flex flex-col md:flex-row ${
@@ -35,10 +50,15 @@ export default function LearnCard({
         <p className="mt-4 text-xl pb-8 text-white-100 leading-relaxed">
           {description}
         </p>
-        <button className="flex ml-auto px-6 py-3 bg-black-600 text-red-400 border border-red-400 rounded-lg font-bold shadow-[0_0_10px_#a020f0] hover:bg-blue-900 hover:text-white hover:shadow-[0_0_20px_#a020f0] transition duration-300">
-    🛡  Wanna Try??
-  </button>
 
+        {showButton && (
+          <button
+            onClick={handleRedirect}
+            className="flex ml-auto px-6 py-3 bg-black-600 text-red-400 border border-red-400 rounded-lg text-xl font-bold shadow-[0_0_10px_#a020f0] hover:bg-blue-900 hover:text-white hover:shadow-[0_0_20px_#a020f0] transition duration-300"
+          >
+            Wanna Try??
+          </button>
+        )}
       </div>
     </div>
   );

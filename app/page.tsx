@@ -44,6 +44,9 @@ export default function Home() {
         />
       
       </section>
+      <footer className="w-full py-8 text-center bg-blue-1000 text-gray-100 mt-16">
+        CyberProtec | Stay Secure 🔒
+      </footer>
     </main>
   );
 }
