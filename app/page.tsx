@@ -2,19 +2,18 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LearnCard from "./components/LearnCard";
 
-
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center bg-gradient-to-b from-gray-950 to-gray-900 text-gray-100">
       <Navbar />
-     
+
       <Hero />
       <section
         id="learn"
         className="mt-32 w-full flex flex-col items-center px-6 space-y-16"
       >
         <p className="text-3xl animation: spin md:text-4xl font-extrabold text-center text-blue-400 dark:text-blue-300">
-          Explore common cybersecurity threats
+          Explore Common Cybersecurity Threats
         </p>
 
         <LearnCard
@@ -42,7 +41,6 @@ export default function Home() {
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXFjxsp9VGqFd-Unwo_0xKphb7ZYe3jJG_AQ&s"
           reverse
         />
-      
       </section>
       <footer className="w-full py-8 text-center bg-blue-1000 text-gray-100 mt-16">
         CyberProtec | Stay Secure 🔒

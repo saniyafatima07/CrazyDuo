@@ -17,10 +17,10 @@ export default function Navbar() {
         <a href="#learn" className="hover:text-blue-400">
           Learn
         </a>
-        <a href="#tips" className="hover:text-blue-400">
+        <Link href="/Tools" className="hover:text-blue-400">
           Tools
-        </a>
-        <a href="https://cybercrime.gov.in/" className="hover:text-blue-400">
+        </Link>
+        <a href="#about" className="hover:text-blue-400">
           Report
         </a>
       </div>

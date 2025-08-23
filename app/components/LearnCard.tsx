@@ -23,7 +23,6 @@ export default function LearnCard({
     }
   };
 
-  // ✅ show button only for OTP & Phishing
   const showButton = title.includes("OTP") || title.includes("Phishing");
 
   return (
