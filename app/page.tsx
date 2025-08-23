@@ -20,14 +20,12 @@ export default function Home() {
         </p>
 
         <LearnCard
-          
           title="OTP Fraud (UPI)"
           description="Scammers trick you into sharing one-time passwords during online transactions. Never share your OTP, even with someone claiming to be from your bank."
           image="https://static.toiimg.com/thumb/msid-115671218,width-1280,height-720,imgsize-1274430,resizemode-6,overlay-toi_sw,pt-32,y_pad-40/photo.jpg"
         />
 
         <LearnCard
-          
           title="Phishing Emails"
           description="Fraudsters send fake emails that look genuine to steal your login details. Always verify the sender and avoid clicking on suspicious links."
           image="https://businesspost.ng/wp-content/uploads/2024/04/phishing-email.jpg"
@@ -35,14 +33,12 @@ export default function Home() {
         />
 
         <LearnCard
-          
           title="Social Engineering"
           description="Attackers manipulate you into revealing sensitive information by exploiting trust, fear, or urgency. Stay alert and question unusual requests."
           image="https://colony-west.com/wp-content/uploads/2019/08/socialengineering.jpg"
         />
 
         <LearnCard
-          
           title="Social Media Stalking"
           description="Oversharing online can expose personal details. Adjust your privacy settings and be mindful of what you post."
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXFjxsp9VGqFd-Unwo_0xKphb7ZYe3jJG_AQ&s"
