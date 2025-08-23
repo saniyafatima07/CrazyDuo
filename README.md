@@ -7,7 +7,7 @@ Our mission is to **raise awareness about current cybercrimes** by providing:
 - **Tools and techniques** to prevent attacks  
 - **Precautionary steps** to safeguard personal privacy  
 - **Direct links** to official websites for filing complaints  
-- **Educational videos** to help users understand cyber threats easily and effectively  
+
 
 CyberProtec empowers users to stay informed, protected, and proactive in the digital world.
 
