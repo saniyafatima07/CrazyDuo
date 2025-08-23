@@ -20,7 +20,7 @@ export default function Navbar() {
         <Link href="/Tools" className="hover:text-blue-400">
           Tools
         </Link>
-        <a href="#about" className="hover:text-blue-400">
+        <a href="https://cybercrime.gov.in/" className="hover:text-blue-400">
           Report
         </a>
       </div>
