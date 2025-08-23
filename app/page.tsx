@@ -2,10 +2,12 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import LearnCard from "./components/LearnCard";
 
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center bg-gradient-to-b from-gray-950 to-gray-900 text-gray-100">
       <Navbar />
+     
       <Hero />
       <section
         id="learn"
@@ -40,6 +42,7 @@ export default function Home() {
           image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXFjxsp9VGqFd-Unwo_0xKphb7ZYe3jJG_AQ&s"
           reverse
         />
+      
       </section>
     </main>
   );

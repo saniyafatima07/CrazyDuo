@@ -1,7 +1,14 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  images: {
+    domains: ['play-lh.googleusercontent.com'], // allow this host
+  },
 };
+
+
+module.exports = nextConfig;
+
 
 export default nextConfig;
