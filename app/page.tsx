@@ -11,12 +11,8 @@ export default function Home() {
         id="learn"
         className="mt-32 w-full flex flex-col items-center px-6 space-y-16"
       >
-        <p className="text-3xl animation: spin md:text-5xl font-extrabold text-center text-blue-400 dark:text-blue-300">
-          Learn to Stay Safe Online
-        </p>
-        <p className="max-w-2xl text-center text-xl text-purple-300 dark:text-gray-400">
-          Explore common cybersecurity threats and how to protect yourself from
-          them.
+        <p className="text-3xl animation: spin md:text-4xl font-extrabold text-center text-blue-400 dark:text-blue-300">
+          Explore common cybersecurity threats
         </p>
 
         <LearnCard
